@@ -97,29 +97,6 @@ body {
     font-size: 1.3rem;
 }
 
-/* Global Sections (like the intro on index.html) */
-.Conecte {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #008080;
-    color: #ffffff;
-    box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.Conecte h1 {
-    font-size: 3.5rem;
-    line-height: 1.2;
-    margin-bottom: 25px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.Conecte p {
-    font-size: 1.4rem;
-    max-width: 700px;
-    margin: 0 auto 50px;
-    color: #e0e0e0;
-}
-
 .container-limitada {
     max-width: 1480px;
     margin: 0 auto;
@@ -128,198 +105,12 @@ body {
     box-sizing: border-box;
 }
 
-.container { /* This is for the "Fale Conosco" and "Redes Sociais" section on index.html */
+.container { /* "Fale Conosco" e "Redes Sociais"  */
     padding: 60px 40px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: #f0f2f5; /* Changed for consistent background */
-}
-
-.card-central {
-    max-width: 1480px;
-    background-color: #131f3b;
-    border-radius: 20px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    color: white;
-    width: 100%;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-}
-
-/* Cards Section (Trabalhe Conosco, Parceiro, Vendas) */
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 60px 20px;
-    background-color: #f0f2f5; /* Changed for consistent background */
-}
-
-.cards .card {
-    background: linear-gradient(135deg, #1a1b3a 0%, #0c1221 100%);
-    color: white;
-    width: 320px;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    overflow: hidden;
-    position: relative;
-}
-
-.cards .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-}
-
-.cards .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 18px 18px 0 0;
-}
-
-.cards .card p {
-    padding: 20px;
-    font-size: 22px;
-    font-weight: 600;
-    text-align: center;
-}
-
-/* Contact Section (Fale Conosco) */
-.contato h2 {
-    font-size: 2.8rem;
-    margin-bottom: 15px;
-    text-align: center;
-    color: #fdf1dc;
-}
-
-.contato p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #c5c5c5;
-}
-
-.contato-canais {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 20px;
-}
-
-.contato-canais .canal {
-    background: linear-gradient(135deg, #1c2a4a 0%, #0d162d 100%);
-    color: #fdf1dc;
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 260px;
-    height: auto;
-    min-height: 130px;
-}
-
-.contato-canais .canal:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-}
-
-.contato-canais .canal i {
-    font-size: 2.8rem;
-    color: #00bcd4;
-    margin-bottom: 15px;
-}
-
-.contato-canais .canal p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    color: #c5c5c5;
-    margin-bottom: 5px;
-}
-
-.contato-canais .canal strong {
-    color: #ffffff;
-    font-size: 1.2rem;
-    display: block;
-}
-
-/* Social Media Section */
-.social-section {
-    text-align: center;
-    padding: 40px 20px;
-    color: white;
-}
-
-.social-section h2 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #fdf1dc;
-}
-
-.social-section p {
-    font-size: 1.2rem;
-    color: #bbb;
-    margin-bottom: 40px;
-}
-
-.social-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.social-grid .social-item {
-    background: linear-gradient(135deg, #1c2a4a 0%, #0d162d 100%);
-    color: #fdf1dc;
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 180px;
-    min-height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.social-grid .social-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-}
-
-.social-grid .social-item i {
-    font-size: 3rem;
-    margin-bottom: 12px;
-    color: #4CAF50; /* Default color, can be overridden */
-}
-
-.social-grid .social-item span {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1.1rem;
-}
-
-.social-grid .social-item p {
-    font-size: 0.95rem;
-    color: #c5c5c5;
-    margin: 0;
+    background-color: #f0f2f5; 
 }
 
 
@@ -338,6 +129,9 @@ body {
     box-sizing: border-box;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+
+
+
 
 .newsletter-texto {
     flex: 1;
@@ -523,17 +317,6 @@ body {
         order: 2;
     }
 
-    .Conecte h1 {
-        font-size: 2.8rem;
-    }
-
-    .Conecte p {
-        font-size: 1.2rem;
-    }
-
-    .cards, .container {
-        padding: 40px 20px;
-    }
 
     .newsletter {
         flex-direction: column;
@@ -587,22 +370,6 @@ body {
         font-size: 0.8rem;
     }
 
-    .Conecte {
-        padding: 60px 20px;
-    }
-
-    .Conecte h1 {
-        font-size: 2.2rem;
-    }
-
-    .Conecte p {
-        font-size: 1rem;
-    }
-
-    .card-central {
-        padding: 30px;
-        gap: 30px;
-    }
 
     .cards .card,
     .contato-canais .canal,
@@ -671,19 +438,7 @@ body {
         width: 100%;
         justify-content: center;
     }
-
-    .Conecte h1 {
-        font-size: 1.8rem;
-    }
-
-    .Conecte p {
-        font-size: 0.9rem;
-    }
-
-    .card-central {
-        padding: 20px;
-    }
-
+    
     .newsletter-qr button {
         padding: 12px 0;
         font-size: 1rem;

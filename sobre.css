@@ -1,0 +1,292 @@
+/* Styles specific to the 'Sobre Nós' page */
+
+.about-hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #008080, #005f5f); /* Gradient for hero section */
+    color: #ffffff;
+    box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-hero h1 {
+    font-size: 3.8rem;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.about-hero p {
+    font-size: 1.6rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e0e0e0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 20px; /* Adjust padding for spacing */
+    background-color: #ffffff; /* White background for readability */
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin: 40px auto; /* Add margin to separate from other sections */
+}
+
+.about-content.container-limitada { /* Added .container-limitada to leverage its max-width */
+    max-width: 1200px; /* Adjust as needed, already set in style.css for this class */
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px; /* Ensure text section doesn't get too small */
+}
+
+.about-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #005f5f; /* A darker teal for headings */
+}
+
+.about-text p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.mission-vision-values {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 80px 20px;
+    background-color: #131f3b; /* Dark background from card-central */
+    color: white;
+    margin-top: 40px;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mvv-item {
+    background: linear-gradient(135deg, #1c2a4a 0%, #0d162d 100%);
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    width: 350px; /* Fixed width for consistency */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.mvv-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.mvv-item i {
+    font-size: 4rem;
+    color: #00bcd4; /* Accent color for icons */
+    margin-bottom: 20px;
+}
+
+.mvv-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fdf1dc;
+}
+
+.mvv-item p, .mvv-item li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #c5c5c5;
+}
+
+.mvv-item ul {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.mvv-item ul li {
+    margin-bottom: 8px;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+}
+
+.mvv-item ul li::before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    color: #00bcd4; /* Color the bullet point */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+.team-section {
+    background-color: #f0f2f5; /* Light background */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 3.2rem;
+    color: #005f5f;
+    margin-bottom: 20px;
+}
+
+.team-description {
+    font-size: 1.4rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Spacing between members */
+}
+
+.team-member {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 280px; /* Fixed width for team member cards */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular images */
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #008080; /* Border color from main theme */
+    box-shadow: 0 0 0 5px rgba(0, 128, 128, 0.2); /* Outer glow effect */
+}
+
+.team-member h4 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments for 'Sobre Nós' sections */
+@media (max-width: 1024px) {
+    .about-hero h1 {
+        font-size: 3rem;
+    }
+    .about-hero p {
+        font-size: 1.3rem;
+    }
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text, .about-image {
+        min-width: unset; /* Remove min-width for smaller screens */
+    }
+    .about-text h2 {
+        text-align: center;
+    }
+    .mvv-item {
+        width: 300px; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 60px 20px;
+    }
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    .about-hero p {
+        font-size: 1.1rem;
+    }
+    .about-content {
+        padding: 40px 20px;
+    }
+    .about-text h2 {
+        font-size: 2.2rem;
+    }
+    .about-text p {
+        font-size: 1rem;
+    }
+    .mission-vision-values {
+        padding: 60px 20px;
+    }
+    .mvv-item {
+        width: 100%;
+        max-width: 320px; /* Ensure they don't get too wide on small screens */
+    }
+    .team-section {
+        padding: 60px 20px;
+    }
+    .team-section h2 {
+        font-size: 2.5rem;
+    }
+    .team-description {
+        font-size: 1.1rem;
+    }
+    .team-member {
+        width: 100%;
+        max-width: 280px; /* Ensure they don't get too wide on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    .about-hero p {
+        font-size: 0.9rem;
+    }
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+    .about-text p {
+        font-size: 0.9rem;
+    }
+    .mvv-item h3 {
+        font-size: 1.5rem;
+    }
+    .mvv-item p, .mvv-item li {
+        font-size: 0.95rem;
+    }
+    .team-section h2 {
+        font-size: 2rem;
+    }
+    .team-description {
+        font-size: 0.95rem;
+    }
+}

@@ -1,15 +1,15 @@
 :root {
-    --color-primary: #008080;
-    --color-secondary: #1f2b48;
-    --color-background: #f0f2f5;
+    --color-primary: #008080; /* Teal/Greenish-blue */
+    --color-secondary: #1f2b48; /* Dark blue/Navy */
+    --color-background: #f0f2f5; /* Light gray background */
     --color-white: #ffffff;
     --color-black: #000000;
-    --color-text: #333;
-    --color-light-gray: #e0e0e0;
-    --color-footer-bg: #07121e;
-    --color-footer-text: #fdf1dc;
-    --color-footer-link: #cfcfcf;
-    --color-footer-border: rgba(255, 255, 255, 0.1);
+    --color-text: #333; /* Standard dark text */
+    --color-light-gray: #e0e0e0; /* Lighter gray */
+    --color-footer-bg: #07121e; /* Very dark blue for footer background */
+    --color-footer-text: #fdf1dc; /* Off-white/Cream for footer text */
+    --color-footer-link: #cfcfcf; /* Light gray for footer links */
+    --color-footer-border: rgba(255, 255, 255, 0.1); /* Subtle white border for footer */
     --shadow-header: 0 4px 15px rgba(0, 0, 0, 0.1);
     --shadow-container: 0 10px 30px rgba(0, 0, 0, 0.15);
     --shadow-button: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -19,7 +19,7 @@
     --shadow-footer-inset: inset 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Reset e base */
+/* Reset and base styles */
 * {
     padding: 0;
     margin: 0;
@@ -32,30 +32,35 @@ body {
     color: var(--color-text);
 }
 
-/* Header */
+/* Header styles */
 .main-header {
     display: flex;
     justify-content: center;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary); /* Main header background color */
     padding: 20px 0;
     box-shadow: var(--shadow-header);
+    position: relative; /* Essential for absolute positioning of children (like hamburger) */
 }
 
 .header-container {
     background-color: var(--color-white);
-    border-radius: 50px;
+    border-radius: 50px; /* Rounded corners for desktop */
     padding: 5px 20px;
     box-shadow: var(--shadow-container);
     width: 90%;
     max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Space out items on desktop */
 }
 
 .logo img {
     height: 60px;
     margin-right: 10px;
+}
+
+.nav-menu {
+    display: flex; /* Display as flex row for desktop */
 }
 
 .nav-menu a {
@@ -109,7 +114,7 @@ body {
     display: block;
 }
 
-.call-us strong {
+.call-us b {
     font-size: 1.1rem;
 }
 
@@ -117,7 +122,26 @@ body {
     font-size: 1.3rem;
 }
 
-/* Containers */
+/* Hamburger menu icon styles */
+.hamburger-menu {
+    display: none; /* Hidden by default on larger screens */
+    color: var(--color-white); /* White icon for visibility on primary header color */
+    cursor: pointer;
+    z-index: 100; /* Ensure it's above other elements */
+    font-size: 2.2rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.hamburger-menu:hover {
+    color: var(--color-light-gray); /* Subtle hover effect */
+}
+
+.hamburger-menu i {
+    line-height: 1;
+}
+
+/* General containers */
 .container-limitada {
     max-width: 1480px;
     margin: 0 auto;
@@ -134,7 +158,7 @@ body {
     background-color: var(--color-background);
 }
 
-/* Newsletter */
+/* Newsletter section */
 .newsletter {
     max-width: 1480px;
     margin: 60px auto;
@@ -216,7 +240,7 @@ main {
     background-color: var(--color-light-gray);
 }
 
-/* Footer */
+/* Footer styles */
 .footer {
     background-color: var(--color-footer-bg);
     color: var(--color-footer-text);
@@ -241,7 +265,7 @@ main {
 .footer-logo-info img {
     width: 140px;
     margin-bottom: 15px;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1); /* Invert logo for dark footer */
 }
 
 .footer-logo-info p {
@@ -251,7 +275,7 @@ main {
     color: var(--color-footer-link);
 }
 
-.footer-logo-info strong {
+.footer-logo-info b {
     color: var(--color-footer-text);
 }
 
@@ -320,11 +344,11 @@ main {
     padding-top: 20px;
 }
 
-.footer-bottom strong {
+.footer-bottom b {
     color: var(--color-footer-text);
 }
 
-/* Responsividade */
+/* Responsiveness adjustments */
 @media (max-width: 1024px) {
     .header-container {
         flex-wrap: wrap;
@@ -336,6 +360,7 @@ main {
         order: 3;
         flex-basis: 100%;
         text-align: center;
+        justify-content: center;
     }
     .call-us {
         margin-top: 15px;
@@ -368,21 +393,88 @@ main {
 
 @media (max-width: 768px) {
     .main-header {
-        padding: 10px 0;
+        padding: 0; /* Remove vertical padding to allow header-container to span full height */
+        position: relative;
     }
+
+    .header-container {
+        border-radius: 0; /* Remove border-radius to make it flush */
+        padding: 10px 20px; /* Adjust padding for mobile header bar */
+        justify-content: space-between; /* Keep logo left, hamburger centered */
+        align-items: center;
+        background-color: var(--color-primary); /* Make header-container match main-header color */
+        box-shadow: none; /* Remove shadow to blend */
+        width: 100%; /* Ensure full width */
+    }
+
     .logo img {
         height: 50px;
+        filter: brightness(0) invert(1); /* Invert logo color for better contrast on primary background */
     }
+    
+    .hamburger-menu {
+        display: block; /* Show hamburger icon on mobile */
+        position: absolute; /* Position relative to .main-header */
+        left: 50%; /* Start from the middle */
+        transform: translate(-50%, -50%); /* Center the icon */
+        top: 50%; /* Vertically center */
+        right: auto; /* Remove any conflicting right positioning */
+        color: var(--color-white); /* Ensure icon is white */
+        z-index: 101; /* Ensure it's above the opened nav menu */
+    }
+
+    .nav-menu {
+        display: none; /* Hide the regular menu by default on mobile */
+        flex-direction: column; /* Stack menu items vertically */
+        background-color: rgba(0, 128, 128, 0.9); /* Primary color with 90% opacity for transparency */
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Position below the header bar (approx. height of header container) */
+        left: 0;
+        padding: 0; /* Remove padding from menu wrapper */
+        box-shadow: none; /* Remove shadow to blend with header */
+        border-radius: 0 0 18px 18px; /* Keep bottom border-radius for the menu block */
+        z-index: 99;
+        /* Transitions for smooth open/close effect */
+        transition: top 0.3s ease-out, opacity 0.3s ease-out;
+        opacity: 0; /* Start hidden for fade-in effect */
+        pointer-events: none; /* Prevent clicks when hidden */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show the menu when 'active' class is toggled by JS */
+        opacity: 1; /* Fade in */
+        pointer-events: all; /* Allow clicks when visible */
+    }
+
     .nav-menu a {
-        margin: 0 10px;
-        font-size: 16px;
+        color: var(--color-white); /* White text for menu links */
+        margin: 0; /* Remove external margins, use padding for spacing */
+        padding: 15px 20px; /* Internal padding for click area */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Subtle white border between links */
+        text-align: center;
+        width: 100%;
+        transition: background-color 0.3s ease; /* Smooth hover effect */
     }
+
+    .nav-menu a:last-child {
+        border-bottom: none; /* No border on the last item */
+    }
+
+    .nav-menu a:hover {
+        background-color: rgba(0, 0, 0, 0.1); /* Subtle darker overlay on hover */
+        color: var(--color-white); /* Ensure text stays white on hover */
+    }
+
+    .nav-menu a::after {
+        content: none; /* Remove desktop underline animation for mobile */
+    }
+
     .call-us {
-        padding: 8px 15px;
+        display: none; /* Hide call-us section on mobile */
     }
-    .call-us small, .call-us strong {
-        font-size: 0.8rem;
-    }
+
+    /* Adjustments for various components on smaller screens */
     .cards .card,
     .contato-canais .canal,
     .social-grid .social-item,
@@ -421,23 +513,16 @@ main {
 
 @media (max-width: 480px) {
     .header-container {
-        flex-direction: column;
-        padding: 10px;
+        padding: 10px 15px; /* Slightly less padding for very small screens */
     }
     .logo {
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
     .nav-menu {
-        margin-top: 10px;
-    }
-    .nav-menu a {
-        display: block;
-        margin: 8px 0;
+        top: 60px; /* Adjusted based on header height for very small screens */
     }
     .call-us {
-        margin-top: 10px;
-        width: 100%;
-        justify-content: center;
+        display: none;
     }
     .newsletter-qr button {
         padding: 12px 0;

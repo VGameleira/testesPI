@@ -1,12 +1,14 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Crucial for consistent layout */
+    box-sizing: border-box;
+    /* Crucial for consistent layout */
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5; /* A soft background for the body */
+    background-color: #f0f2f5;
+    /* A soft background for the body */
     color: #333;
 }
 
@@ -14,9 +16,12 @@ body {
 .main-header {
     display: flex;
     justify-content: center;
-    background-color: #008080; /* Header background color */
-    padding: 20px 0; /* Padding for the header */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Header shadow */
+    background-color: #008080;
+    /* Header background color */
+    padding: 20px 0;
+    /* Padding for the header */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Header shadow */
 }
 
 .header-container {
@@ -25,14 +30,16 @@ body {
     padding: 5px 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     width: 90%;
-    max-width: 1200px; /* Increased for more menu space */
+    max-width: 1200px;
+    /* Increased for more menu space */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo img {
-    height: 60px; /* Adjusted logo height */
+    height: 60px;
+    /* Adjusted logo height */
     margin-right: 10px;
 }
 
@@ -54,7 +61,8 @@ body {
     height: 3px;
     bottom: -5px;
     left: 50%;
-    background-color: #008080; /* Highlight line */
+    background-color: #008080;
+    /* Highlight line */
     transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -128,12 +136,14 @@ body {
     box-sizing: border-box;
 }
 
-.container { /* This is for the "Fale Conosco" and "Redes Sociais" section on index.html */
+.container {
+    /* This is for the "Fale Conosco" and "Redes Sociais" section on index.html */
     padding: 60px 40px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: #f0f2f5; /* Changed for consistent background */
+    background-color: #f0f2f5;
+    /* Changed for consistent background */
 }
 
 .card-central {
@@ -147,6 +157,7 @@ body {
     color: white;
     width: 100%;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+
 }
 
 /* Cards Section (Trabalhe Conosco, Parceiro, Vendas) */
@@ -156,7 +167,8 @@ body {
     gap: 30px;
     flex-wrap: wrap;
     padding: 60px 20px;
-    background-color: #f0f2f5; /* Changed for consistent background */
+    background-color: #f0f2f5;
+    /* Changed for consistent background */
 }
 
 .cards .card {
@@ -260,6 +272,21 @@ body {
     color: white;
 }
 
+.redes-social-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fdf1dc;
+}
+
+.redes-social-section p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #c5c5c5;
+}
+
+
 .social-section h2 {
     font-size: 2.8rem;
     font-weight: bold;
@@ -306,7 +333,8 @@ body {
 .social-grid .social-item i {
     font-size: 3rem;
     margin-bottom: 12px;
-    color: #4CAF50; /* Default color, can be overridden */
+    color: #4CAF50;
+    /* Default color, can be overridden */
 }
 
 .social-grid .social-item span {
@@ -531,7 +559,8 @@ body {
         font-size: 1.2rem;
     }
 
-    .cards, .container {
+    .cards,
+    .container {
         padding: 40px 20px;
     }
 
@@ -541,7 +570,8 @@ body {
         padding: 40px;
     }
 
-    .newsletter-texto h2, .newsletter-texto p {
+    .newsletter-texto h2,
+    .newsletter-texto p {
         text-align: center;
     }
 
@@ -583,7 +613,8 @@ body {
         padding: 8px 15px;
     }
 
-    .call-us small, .call-us strong {
+    .call-us small,
+    .call-us strong {
         font-size: 0.8rem;
     }
 
@@ -616,11 +647,15 @@ body {
         margin: 0 auto;
     }
 
-    .contato h2, .social-section h2, .newsletter-texto h2 {
+    .contato h2,
+    .social-section h2,
+    .newsletter-texto h2 {
         font-size: 2rem;
     }
 
-    .contato p, .social-section p, .newsletter-texto p {
+    .contato p,
+    .social-section p,
+    .newsletter-texto p {
         font-size: 1rem;
     }
 

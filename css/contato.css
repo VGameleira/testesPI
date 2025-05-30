@@ -30,13 +30,11 @@
 }
 
 .container {
-    /* This is for the "Fale Conosco" and "Redes Sociais" section on index.html */
     padding: 60px 40px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     background-color: #f0f2f5;
-    /* Changed for consistent background */
 }
 
 .card-central {
@@ -61,7 +59,6 @@
     flex-wrap: wrap;
     padding: 60px 20px;
     background-color: #f0f2f5;
-    /* Changed for consistent background */
 }
 
 .cards .card {
@@ -227,7 +224,6 @@
     font-size: 3rem;
     margin-bottom: 12px;
     color: #4CAF50;
-    /* Default color, can be overridden */
 }
 
 .social-grid .social-item span {

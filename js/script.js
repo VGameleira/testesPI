@@ -29,3 +29,32 @@ if (hamburgerIcon && navMenu) { // Ensure elements exist before adding listeners
 } else {
     console.warn("Hamburger icon or navigation menu not found. Hamburger menu functionality might not work.");
 }
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    const darkModeAtivado = localStorage.getItem("darkMode") === "true";
+    if (darkModeAtivado) {
+        document.body.classList.add("dark-mode");
+    }
+
+    const botao = document.getElementById("toggleDarkMode");
+    if (botao) {
+        botao.addEventListener("click", toggleDarkMode);
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("themeToggle");
+    const icon = document.getElementById("icon");
+
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+
+        icon.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    });
+});

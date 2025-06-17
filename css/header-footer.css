@@ -155,7 +155,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: var(--color-background);
+
 }
 
 /* Newsletter section */
@@ -176,6 +176,7 @@ body {
 main {
     background-color: var(--color-white);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 50px;
@@ -348,7 +349,7 @@ main {
     color: var(--color-footer-text);
 }
 
-/* Responsiveness adjustments */
+/* Responsividade */
 @media (max-width: 1024px) {
     .header-container {
         flex-wrap: wrap;
@@ -357,7 +358,7 @@ main {
     }
 
     .nav-menu {
-        margin-top: 15px;
+        /* margin-top: 15px; */
         order: 3;
         flex-basis: 100%;
         text-align: center;
@@ -439,7 +440,7 @@ main {
         background-color: rgba(0, 128, 128, 0.9);
         width: 100%;
         position: absolute;
-        top: 70px;
+        top: 100%;
         left: 0;
         padding: 0;
         box-shadow: none;
@@ -538,10 +539,6 @@ main {
 
     .logo {
         margin-bottom: 0;
-    }
-
-    .nav-menu {
-        top: 60px;
     }
 
     .call-us {

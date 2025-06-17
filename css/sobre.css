@@ -3,7 +3,7 @@
 .about-hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(to right, #008080, #005f5f); /* Gradient for hero section */
+    background: linear-gradient(to right, #008080, #005f5f); 
     color: #ffffff;
     box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -26,26 +26,26 @@
     display: flex;
     align-items: center;
     gap: 50px;
-    padding: 80px 20px; /* Adjust padding for spacing */
-    background-color: #ffffff; /* White background for readability */
+    padding: 80px 20px;
+    background-color: #ffffff; 
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    margin: 40px auto; /* Add margin to separate from other sections */
+    margin: 40px auto; 
 }
 
-.about-content.container-limitada { /* Added .container-limitada to leverage its max-width */
-    max-width: 1200px; /* Adjust as needed, already set in style.css for this class */
+.about-content.container-limitada {
+    max-width: 1200px; 
 }
 
 .about-text {
     flex: 1;
-    min-width: 300px; /* Ensure text section doesn't get too small */
+    min-width: 300px;
 }
 
 .about-text h2 {
     font-size: 2.8rem;
     margin-bottom: 20px;
-    color: #005f5f; /* A darker teal for headings */
+    color: #005f5f; 
 }
 
 .about-text p {
@@ -74,7 +74,7 @@
     flex-wrap: wrap;
     gap: 40px;
     padding: 80px 20px;
-    background-color: #131f3b; /* Dark background from card-central */
+    background-color: #131f3b;
     color: white;
     margin-top: 40px;
     box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -85,7 +85,7 @@
     padding: 30px;
     border-radius: 18px;
     text-align: center;
-    width: 350px; /* Fixed width for consistency */
+    width: 350px; 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -97,7 +97,7 @@
 
 .mvv-item i {
     font-size: 4rem;
-    color: #00bcd4; /* Accent color for icons */
+    color: #00bcd4;
     margin-bottom: 20px;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .mvv-item ul {
-    list-style: none; /* Remove default bullet points */
+    list-style: none;
     padding-left: 0;
     margin-top: 15px;
 }
@@ -127,8 +127,8 @@
 }
 
 .mvv-item ul li::before {
-    content: '\2022'; /* Unicode character for a bullet point */
-    color: #00bcd4; /* Color the bullet point */
+    content: '\2022'; 
+    color: #00bcd4;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -138,7 +138,7 @@
 }
 
 .team-section {
-    background-color: #f0f2f5; /* Light background */
+    background-color: #f0f2f5; 
     padding: 80px 20px;
     text-align: center;
 }
@@ -160,7 +160,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px; /* Spacing between members */
+    gap: 40px;
 }
 
 .team-member {
@@ -168,7 +168,7 @@
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    width: 280px; /* Fixed width for team member cards */
+    width: 280px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -181,11 +181,11 @@
 .team-member img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Circular images */
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 5px solid #008080; /* Border color from main theme */
-    box-shadow: 0 0 0 5px rgba(0, 128, 128, 0.2); /* Outer glow effect */
+    border: 5px solid #008080;
+    box-shadow: 0 0 0 5px rgba(0, 128, 128, 0.2);
 }
 
 .team-member h4 {
